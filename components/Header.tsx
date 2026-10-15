@@ -12,11 +12,17 @@ export default function Header(){
 
                     <View>
                         <Text style={styles.brandTitle}>Cine<Text style={styles.brandHighlight}>SENAI</Text></Text>
-                        <Text></Text>
+                        <Text style={styles.brandSubtitle}>O Sinema na palma da mão</Text>
                     </View>
-
                 </View>
             </View>
+
+            <View style={styles.headerDestaque}>
+                <Ionicons name="sparkles-outline" size={22} color="#ffee02ff"></Ionicons>
+                <Text style={styles.headerDestaqueTitle}>Destaque</Text>
+
+            </View>
+
         </View>
 
     )
@@ -29,6 +35,9 @@ const styles = StyleSheet.create({
         paddingHorizontal: 20,
         paddingTop: 10,
         paddingBottom: 16,
+        flexDirection:"row",
+        justifyContent:"space-between",
+        alignItems:"center"
     },
 
     
@@ -59,6 +68,31 @@ const styles = StyleSheet.create({
     brandHighlight:{
         color:"#FF3366",
     },
+
+    brandSubtitle:{
+        fontSize:14,
+        color:"#F9F9F9",
+        fontWeight:"400"
+    },
+
+    headerDestaque:{
+        flexDirection:"row",
+        gap:12,
+        height:44,
+        width:120,
+        borderRadius:22,
+        backgroundColor:"rgba(247, 234, 59, 0.12)",
+        borderWidth:1,
+        borderColor:"rgba(247, 234, 59, 0.25)",
+        alignItems:"center",
+        justifyContent:"center"
+    },
+
+    headerDestaqueTitle:{
+        fontSize:14,
+        fontWeight:"900",
+        color:"#ffffff",
+    }
 
 
 
