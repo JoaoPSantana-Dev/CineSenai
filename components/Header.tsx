@@ -17,12 +17,10 @@ export default function Header(){
                 </View>
             </View>
 
-            <View style={styles.headerDestaque}>
-                <Ionicons name="sparkles-outline" size={22} color="#ffee02ff"></Ionicons>
-                <Text style={styles.headerDestaqueTitle}>Destaque</Text>
-
+            <View style={styles.userBadge}>
+                <Ionicons name="sparkles" size={16} color="#FFB800"></Ionicons>
+                <Text style={styles.userBadgeText}>Em Alta</Text>
             </View>
-
         </View>
 
     )
@@ -70,30 +68,28 @@ const styles = StyleSheet.create({
     },
 
     brandSubtitle:{
-        fontSize:14,
-        color:"#F9F9F9",
-        fontWeight:"400"
+        fontSize:12,
+        color:"#94A3B8",
+        fontWeight:"500"
     },
 
-    headerDestaque:{
+    userBadge:{
         flexDirection:"row",
-        gap:12,
-        height:44,
-        width:120,
-        borderRadius:22,
-        backgroundColor:"rgba(247, 234, 59, 0.12)",
-        borderWidth:1,
-        borderColor:"rgba(247, 234, 59, 0.25)",
+        gap:6,
         alignItems:"center",
-        justifyContent:"center"
+        justifyContent:"center",
+        backgroundColor:"rgba(255, 184, 0, 0.12)",
+        borderWidth:1,
+        borderColor:"rgba(255, 184, 0, 0.25)",
+        paddingHorizontal:10,
+        paddingVertical:6,
+        borderRadius:20
     },
 
-    headerDestaqueTitle:{
-        fontSize:14,
-        fontWeight:"900",
-        color:"#ffffff",
+    userBadgeText:{
+        fontSize:12,
+        fontWeight:"700",
+        color:"#FFB800",
     }
-
-
 
 })
