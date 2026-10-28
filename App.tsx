@@ -22,8 +22,8 @@ export default function App() {
               <Text style={styles.sectionTitle}>Filmes em destaque</Text>
           </View>
 
-            <View>
-              <Text>6 Filmes</Text>
+            <View style={styles.countBadge}>
+              <Text style={styles.countTitle}>6 Filmes</Text>
             </View>
 
           </View>
@@ -72,6 +72,21 @@ const styles = StyleSheet.create({
     color: "#FFFFFF",
     letterSpacing: 0.3
   },
+
+  countBadge:{
+    backgroundColor:"#161A28",
+    borderWidth:1,
+    borderColor: "#262D42",
+    borderRadius: 12,
+    paddingHorizontal: 10,
+    paddingVertical: 4
+  },
+
+  countTitle:{
+    fontSize:12,
+    fontWeight:"700",
+    color:"#94A3B8"
+  }
 
   
 
