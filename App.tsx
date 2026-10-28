@@ -9,7 +9,12 @@ export default function App() {
         <StatusBar barStyle="light-content"/>
         <Header/>
         <SearchBar/>  
-        <CategoryButton />  
+
+        <View style={styles.containerCategory}>
+          <CategoryButton title="Ação" selected={true}/>
+          <CategoryButton title="Ação" selected={false}/>      
+        </View>
+
     </View>
   );
 }
@@ -20,6 +25,12 @@ const styles = StyleSheet.create({
     backgroundColor: '#0b0d14',
     paddingTop:40,
   },
+
+  containerCategory:{
+    flexDirection:"row",
+    gap: 10,
+    marginLeft:20
+  }
 
 
 });
