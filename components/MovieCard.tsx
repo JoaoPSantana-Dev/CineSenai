@@ -107,7 +107,7 @@ const styles = StyleSheet.create({
     cardBottom:{
         flexDirection:"row",
         justifyContent:"space-evenly",
-        marginTop:20
+        marginTop:10
     },
 
     detailsButton:{
@@ -115,6 +115,7 @@ const styles = StyleSheet.create({
         height:42,
         backgroundColor: "#1e2437",
         borderRadius:12,
+        borderWidth:1,
         borderColor:"#2d3650",
         alignItems:"center",
         justifyContent:"center"
