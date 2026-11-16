@@ -12,7 +12,7 @@ export default function Rating({
 
         <View style={styles.ratingBadge}>
             <Ionicons name="star" size={12} color="#FFB800"/>
-            <Text style={styles.ratingText}>{value}</Text>
+            <Text style={styles.ratingText}>{value.toFixed(1)}</Text>
         </View>
 
     )
@@ -24,11 +24,12 @@ const styles = StyleSheet.create({
         alignItems:"center",
         justifyContent:"space-evenly",
         paddingHorizontal:10,
-        paddingVertical:6,
+        paddingVertical:4,
         backgroundColor:"rgba(255,184,0,0.12)",
         borderWidth:1,
         borderColor:"rgba(255, 184, 0, 0.25)",
-        borderRadius:12       
+        borderRadius:8,
+        gap:4       
     },
 
     ratingText:{

@@ -1,4 +1,4 @@
-import { Image, ImageSourcePropType, StyleSheet, Text, View } from "react-native";
+import { Image, ImageSourcePropType, Pressable, StyleSheet, Text, View } from "react-native";
 import Rating from "./Rating";
 
 export type MovieCardProps = {
@@ -43,8 +43,10 @@ export function MovieCard({
                 </View>
 
                 <View style={styles.cardBottom}>
-                    <View><Text>Bom dia</Text></View>
-                    <View><Text>Bom dia</Text></View>
+                    <Pressable style={styles.detailsButton}>
+                        <Text style={styles.detailsText}>Ver detalhes</Text>
+                    </Pressable>
+
                 </View>
             
             </View>
@@ -104,7 +106,24 @@ const styles = StyleSheet.create({
 
     cardBottom:{
         flexDirection:"row",
-        justifyContent:"space-evenly"
+        justifyContent:"space-evenly",
+        marginTop:20
+    },
+
+    detailsButton:{
+        flex:1,
+        height:42,
+        backgroundColor: "#1e2437",
+        borderRadius:12,
+        borderColor:"#2d3650",
+        alignItems:"center",
+        justifyContent:"center"
+    },
+
+    detailsText:{
+        fontSize:14,
+        fontWeight:"700",
+        color:"#ffffff"
     }
     
 })
